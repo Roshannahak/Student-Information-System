@@ -5,57 +5,78 @@
 <title>OPJU</title>
 </head>
 <body>
-<center>
-<font color = "green"><h2>Add Student Details</h2></font><hr><br>
-<form action="add_student.jsp" method = "post">
-
-<table>
-<!-- row1 -->
-<tr>
-<lable for = "inroll">Roll number:</lable>&nbsp
-<input type = "text" name = "inroll" required>
-</tr><br><br>
-
-<!-- row2 -->
-<tr>
-<lable for = "inpass">Password:</lable>&nbsp
-<input type = "password" name = "inpass" required>
-</tr><br><br>
-
-<!-- row3 -->
-<tr>
-<lable for = "infirst">Firstname:</lable>&nbsp
-<input type = "text" name = "infirst" required>
-</tr><br><br>
-
-<!-- row4 -->
-<tr>
-<lable for = "inlast">Lastname:</lable>&nbsp
-<input type = "text" name = "inlast">
-</tr><br><br>
-
-<!-- row5 -->
-<tr>
-<lable for = "inage">Age:</lable>&nbsp
-<input type = "number" name = "inage">
-</tr><br><br>
-
-<!-- row6 -->
-<tr>
-<lable for = "inphone">Phone number:</lable>&nbsp
-<input type = "text" name = "inphone">
-</tr><br><br>
-
-<!-- row7 -->
-<tr>
-<lable for = "inemail">Email:</lable>&nbsp
-<input type = "email" name = "inemail" placeholder = "abc@gmail.com">
-</tr><br><br><br>
-
-<input type = "submit" name = "submitbtn">
-</table>
-
-</form>
-</center>
+	<div class = "addinfo"><h1>Add Student Info</h1></div>
+	<div class = "main">
+		<form action="" method = "post">
+			<h3 class = "roll">Roll Number</h3>
+			<input class = "cinroll" type = "text" name = "">
+			
+			<h3 class = "pass">Password</h3>
+			<input class = "cinpass" type = "password" name = "">
+			
+			<div id = "name">
+				<h3 class = "name">Name</h3>
+				<label class = "cfirst">First name</label>
+				<input class = "cinfirst" type = "text" name = "">
+				<lable class = "clast">Last name</lable>
+				<input class = "cinlast" type = "text" name = "">
+			</div>
+			<div id = "genage">
+				<label class = "gender">gender</label>
+				<input class = "cmale" type = "radio" name = "gender" value = "male">
+				<lable class = "clmale">male</lable>
+				<input class = "cfemale" type = "radio" name = "gender" value = "female">
+				<label class = "clfemale">female</label>
+				
+				<label class = "age">Age</label>
+				<input class = "cage" type = "number" name = "">
+			</div>
+			
+			<h3 class = "cdob">Date of Birth</h3>
+			<input class = "cindob" type = "date" name = "">
+			
+			<h3 class = "cemail">Email</h3>
+			<input class = "cinemail" type = "email" name = "">
+			
+			<h3 class = "cphone">Phone Number</h3>
+			<input class = "cinphone" type = "tel" name = "">
+			
+			<div id = "address">
+				<h3 class = "address">Address</h3>
+				
+				<label class = "cstate">state</label>
+				<input class = "cinstate" type = "text" name = "">
+				
+				<label class = "ccity">city</label>
+				<input class = "cincity" type = "text" name = "">
+				
+				<div id = "local">
+				<label class = "clocal">local address</label>
+				<input class = "cinlocal" type = "text" name = "">
+				</div>
+			</div>
+			
+			<h3 class = "ccourse">Course</h3>
+			<select class = "courseopt" name = "course">
+				<option disabled = "disabled" selected = "selected">--choose one--</option>
+				<option>B.TECH</option>
+				<option>M.TECH</option>
+				<option>B.SC</option>
+			</select>
+			
+			<h3 class = "cbranch">branch</h3>
+			<select class = "branchopt" name = "branch">
+				<option disabled = "disabled" selected = "selected">--choose one--</option>
+				<option>cse</option>
+				<option>mech</option>
+				<option>civil</option>
+				<option>meta</option>
+			</select>
+			
+			<div id = "btn">
+				<input class = "btn" type = "submit" value = "hello">
+			</div>
+		</form>
+	</div>
 </body>
 </html>
