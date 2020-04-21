@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel = "stylesheet" href = "add_student.css">
+<title>OPJU</title>
+</head>
+<body>
+	<div class = "addinfo"><h1>Add Student Info</h1></div>
+	<div class = "main">
+		<form action="" method = "post">
+			<h3 class = "name">Roll Number</h3>
+			<input class = "cinroll" type = "text" name = "" required>
+			
+			<h3 class = "name">Password</h3>
+			<input class = "cinpass" type = "password" name = "" required>
+			
+			<div id = "name">
+				<h3 class = "name">Name</h3>
+				<h4 class = "cfirst">First name</h4>
+				<input class = "cinfirst" type = "text" name = "" required>
+				<h4 class = "clast">Last name</h4>
+				<input class = "cinlast" type = "text" name = "">
+			</div>
+			<div id = "genage">
+				<h4 class = "gender">Gender</h4>
+				<div class = "mf">
+					<input class = "cmale" type = "radio" name = "gender" value = "male">
+					<lable class = "clmale">male</lable>
+					<input class = "cfemale" type = "radio" name = "gender" value = "female">
+					<label class = "clfemale">female</label>
+				</div>
+				
+				<div id = "age">
+					<h4 class = "age">Age</h4>
+					<input class = "cage" type = "number" name = "" required>
+				</div>
+			</div>
+			
+			<h3 class = "name">Date of Birth</h3>
+			<input class = "cindob" type = "date" name = "" required>
+			
+			<h3 class = "name">Email</h3>
+			<input class = "cinemail" type = "email" name = "">
+			
+			<h3 class = "name">Phone Number</h3>
+			<input class = "cinphone" type = "tel" name = "" required>
+			
+			<div id = "address">
+				<h3 class = "name">Address</h3>
+				
+				<div class = "sstate">
+					<h4 class = "cstate">State</h4>
+					<input class = "cinstate" type = "text" name = "" required>
+				</div>
+				
+				<div id = "scity">
+					<h4 class = "ccity">City</h4>
+					<input class = "cincity" type = "text" name = "" required>
+				</div>
+				
+				<div id = "local">
+					<h4 class = "clocal">local address</h4>
+					<textarea class = "cinlocal" rows = "3" name = ""></textarea>
+				</div>
+			</div>
+			
+			<h3 class = "name">Course</h3>
+			<select class = "courseopt" name = "course" required>
+				<option disabled = "disabled" selected = "selected">--choose one--</option>
+				<option>B.TECH</option>
+				<option>M.TECH</option>
+				<option>B.SC</option>
+			</select>
+			
+			<h3 class = "name">branch</h3>
+			<select class = "branchopt" name = "branch" required>
+				<option disabled = "disabled" selected = "selected">--choose one--</option>
+				<option>cse</option>
+				<option>mech</option>
+				<option>civil</option>
+				<option>meta</option>
+			</select>
+			
+			<div id = "btn">
+				<button class = "btn" type = "submit">Submit</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
