@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>OPJU</title>
 </head>
 <body>
 <%
@@ -14,11 +14,11 @@ String url = "jdbc:mysql://localhost:3306/sis";
 String user = "root";
 String apassword = "497557";
 
-String roll_id = request.getParameter("userid");
-String login_pass = request.getParameter("inpassword");
+String roll_id = request.getParameter("rollid");
+String login_pass = request.getParameter("inpass");
 
 //sql querys for admin and students
-String admin_query = "select * from admin where id = ? and password = ?";
+String admin_query = "select * from admin where admin_id = ? and password = ?";
 String student_query = "select * from students where roll_no = ? and password = ?";
 
 try{

@@ -1,0 +1,117 @@
+@charset "ISO-8859-1";
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+body{
+	background: #f5f5f5;
+}
+.main{
+	display: flex;
+	width: 102%;
+	height: 500px;
+	max-width: 900px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: absolute;
+}
+.main .left, .main .right{
+	padding: 50px;
+	width: 50%;
+	height: 100%;
+}
+.main .left{
+	background-image: url(background/logbg.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.typotxt{
+	color: #DBDBDB;
+	margin-top: 70px;
+}
+.stutext{
+	letter-spacing: 3px;
+	font-size: 30px;
+}
+.infotext{
+	letter-spacing: 3px;
+	font-size: 30px;
+}
+.systext{
+	letter-spacing: 35px;
+	font-size: 15px;
+}
+.para{
+	margin-top: 30px;
+	letter-spacing: .5px;
+	font-size: 13.9px;
+	color: #959595;
+	font-style: bold;
+	font-family: cursive;
+}
+.main .right{
+	background: #fff;
+}
+.logtxt{
+	float: left;
+	font-style: normal;
+	font-size: 30px;
+	border-bottom: 6px solid #34d058;
+	padding: 8px 0;
+	margin-bottom: 40px;
+}
+.intext{
+	position: relative;
+	margin-bottom: 15px;
+}
+.intext .input{
+	background: #ecebeb;
+	font-size: 16px;
+	padding: 10px 15px;
+	border: 0;
+	line-height: 25px;
+	width: 100%;
+	letter-spacing: .8px;
+	border-radius: 5px;
+}
+.options{
+	width: 100%;
+	margin-bottom: 15px;
+	appearance: none;
+	outline: none;
+	box-shadow: none;
+	border: 0;
+	background: #ecebeb;
+	height: 35px;
+	overflow: hidden;
+	line-height: 3;
+	border-radius: .25em;
+	padding: 0 0 0 10px;
+	letter-spacing: .8px;
+}
+.options option{
+	font-size: 17px;
+}
+button{
+	display: block;
+	outline: none;
+	width: 100%;
+	padding: 12px;
+	font-size: 18px;
+	margin: 35px 0px 0px 0px;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 0;
+	background-color: #28a745;
+    background-image: linear-gradient(-180deg,#34d058,#28a745 90%);
+}
+button:hover{
+	background-color: #36983a;
+}
