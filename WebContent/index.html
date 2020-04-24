@@ -3,33 +3,41 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>OPJU</title>
+<link rel="stylesheet" type="text/css" href="style_index.css">
 </head>
 <body>
-<center><font color = "green"><h1>Student Information System</h1></font><hr>
-<font color = "blue"><h2>Login Portal</h2></font>
-</center>
-<form action="login_server.jsp" method = "POST">
-
-<!-- drop down menu -->
-<label>User type:</label>
-<select name = "select" required>
-<option value = "" disabled selected hidden>--- choose one ---</option>
-<option value = "1">Admin</option>
-<option value = "2">Student</option>
-</select><br><br>
-<table>
-
-<!-- first row -->
-<tr><lable for = "userid">Enter Roll.no/Admin id:</lable><br>
-<input type = "text" name = "userid" required></tr><br><br>
-
-<!-- second row -->
-<tr><lable for = "inpassword">Enter Password:</lable><br>
-<input type = "password" name = "inpassword" required></tr><br><br>
-
-<!-- login button -->
-<tr><input type = "submit" name = "submitbtn" value = "log in"></tr>
-</table>
-</form>
+	<form action="server_index.jsp" method="POST">
+		<div class="main">
+			<div class="left">
+				<!-- left side style -->
+				<div class="typotxt">
+					<h3 class="stutext">STUDENT</h3>
+					<h2 class="infotext">INFORMATION</h2>
+					<h1 class="systext">SYSTEM</h1>
+					<p class="para">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+					sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+					sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+				</div>
+			</div>
+			<div class="right">
+				<h3 class="logtxt">Login</h3>
+				<div class="select">
+					<select class="options" name = "select">
+						<option selected="selected" disabled="disabled">-- Choose one --</option>
+						<option value="1">Admin</option>
+						<option value="2">Student</option>
+					</select>
+				</div>
+				<div class="intext">
+					<input type="text" name="rollid" placeholder="Roll.no/Admin ID" class="input" required="required">
+				</div>
+				<div class="intext">
+					<input type="password" name="inpass" placeholder="Password" class="input" required="required">
+				</div>
+				<button type="submit">Login</button>
+			</div>
+		</div>
+	</form>
 </body>
 </html>
