@@ -10,14 +10,13 @@ body{
 	background-origin: border-box;
 	background-attachment: fixed;
 	font-family: sans-serif;
-	margin-top: 40px;
-	margin-bottom: 80px;
 }
 .addinfo{
 	width: 800px;
 	padding: 15px 0px 15px 0px;
 	text-align: center;
 	margin: auto;
+	margin-top: 50px;
 	background-color: #4CAF50;
 	/*background-color: rgb(0,0,0,0.6);*/
 	color: #ffffff;
@@ -31,6 +30,7 @@ body{
 	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	padding-bottom: 40px;
+	margin-bottom: 80px;
 }
 form{
 	padding: 10px;
@@ -244,8 +244,40 @@ button{
 	color: white;
 	cursor: pointer;
 	border-radius: 12px;
-	border: 2px solid #121515;
+	border: 0;
 }
 button:hover{
 	background-color: #3D3D3D;
 }
+
+.response1{
+	width: 100%;
+	background-color: #5fbf63;
+}
+.success{
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+.response2{
+	width: 100%;
+	background-color: #d84848;
+}
+.failed{
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+.response3{
+	width: 100%;
+	background-color: #e4a439;
+}
+.alert{
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+
+
+
+
