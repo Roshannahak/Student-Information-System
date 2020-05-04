@@ -5,6 +5,7 @@
 <html>
 <head>
 <link rel = "stylesheet" href = "student_details.css">
+<script src="https://use.fontawesome.com/89c5ec223f.js"></script>
 <meta charset="ISO-8859-1">
 <title>OPJU</title>
 </head>
@@ -15,10 +16,10 @@
 				<th>Roll number</th>
 				<th>Name</th>
 				<th>Age</th>
-				<th>Gender</th>
 				<th>Email</th>
 				<th>course</th>
 				<th>branch</th>
+				<th>Task</th>
 			</tr>
 			<%
 				String driver = "com.mysql.jdbc.Driver";
@@ -39,10 +40,14 @@
 							<td><%= rs.getString(1) %></td>
 							<td><%= rs.getString(2)+" "+rs.getString(3) %></td>
 							<td><%= rs.getString(4) %></td>
-							<td><%= rs.getString(5) %></td>
 							<td><%= rs.getString(6) %></td>
 							<td><%= rs.getString(7) %></td>
 							<td><%= rs.getString(8) %></td>
+							<td>
+								<a class = "view" href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+								<a class = "edit" href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+								<a class = "del" href="delete.jsp?d=<%= rs.getString(1) %>"><i class="fa fa-trash" aria-hidden="true"></i></a>
+							</td>
 						</tr>
 					<%
 					}
