@@ -45,7 +45,7 @@
 							<td><%= rs.getString(8) %></td>
 							<td>
 								<a class = "view" href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
-								<a class = "edit" href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+								<a class = "edit" href="edit.jsp?e=<%= rs.getString(1) %>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 								<a class = "del" href="delete.jsp?d=<%= rs.getString(1) %>"><i class="fa fa-trash" aria-hidden="true"></i></a>
 							</td>
 						</tr>
