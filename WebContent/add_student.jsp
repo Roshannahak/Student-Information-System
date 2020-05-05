@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link rel = "stylesheet" href = "add_student.css">
+<link rel = "stylesheet" type="text/css" href = "add_student.css">
 <title>OPJU</title>
 </head>
 <body>
