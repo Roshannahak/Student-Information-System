@@ -1,0 +1,251 @@
+@charset "ISO-8859-1";
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-image: url(background/bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-origin: border-box;
+	background-attachment: fixed;
+	font-family: sans-serif;
+}
+.addinfo{
+	width: 800px;
+	padding: 15px 0px 15px 0px;
+	text-align: center;
+	margin: auto;
+	margin-top: 50px;
+	background-color: #4CAF50;
+	/*background-color: rgb(0,0,0,0.6);*/
+	color: #ffffff;
+	border-radius: 15px 15px 0px 0px;
+	font-size: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main{
+	width: 800px;
+	margin: auto;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding-bottom: 40px;
+	margin-bottom: 80px;
+}
+form{
+	padding: 10px;
+}
+.name{
+	margin-left: 25px;
+	width: 125px;
+	color: black;
+	margin-top: 30px;
+	font-size: 17px;
+	font-weight: 700;
+}
+
+.cinroll{
+	position: relative;
+	left: 200px;
+	top: -16px;
+	line-height: 26px;
+	font-size: 16px;
+	padding: 0 10px;
+	width: 495px;
+}
+
+.cinpass{
+	position: relative;
+	left: 200px;
+	line-height: 26px;
+	font-size: 16px;
+	width: 495px;
+	padding: 0 10px;
+	top: -16px;
+}
+
+.cfirst{
+	position: relative;
+	left: 200px;
+	top: -16px;
+	color: black;
+}
+.cinfirst{
+	position: relative;
+	left: 200px;
+	top: -10px;
+	width: 227px;
+	line-height: 26px;
+	padding: 0 10px;
+	font-size: 16px;
+}
+.clast{
+	position: relative;
+	left: 475px;
+	top: -65px;
+	color: black;
+}
+.cinlast{
+	position: relative;
+	left: 475px;
+	top: -58px;
+	width: 222px;
+	line-height: 26px;
+	padding: 0 10px;
+	font-size: 16px;
+}
+#name{
+	width: 100%;
+	height: 80px;
+}
+#genage{
+	width: 100%;
+	height: 80px;
+}
+.gender{
+	position: relative;
+	left: 200px;
+	color: black;
+}
+.mf{
+	position: relative;
+	left: 200px;
+	top: 10px;
+}
+.clmale{
+	color: black;
+}
+.cfemale{
+	margin-left: 50px;
+}
+.clfemale{
+	color: black;
+}
+#age{
+	position: relative;
+	left: 475px;
+	top: -35px;
+}
+.age{
+	color: black;
+}
+.cage{
+	position: relative;
+	top: 10px;
+	width: 222px;
+	padding: 0 10px;
+	font-size: 16px;
+	line-height: 26px;
+}
+.cindob{
+	position: relative;
+	left: 200px;
+	padding: 0 10px;
+	width: 495px;
+	line-height: 26px;
+	top: -16px;
+	font-size: 16px;
+}
+.cinemail{
+	position: relative;
+	left: 200px;
+	line-height: 26px;
+	top: -16px;
+	width: 495px;
+	padding: 0 10px;
+	font-size: 16px;
+}
+.cinphone{
+	position: relative;
+	left: 200px;
+	line-height: 26px;
+	width: 495px;
+	padding: 0 10px;
+	top: -16px;
+	font-size: 16px;
+}
+#address{
+	width: 100%;
+	height: 220px;
+}
+.sstate{
+	position: relative;
+	left: 200px;
+	top: -16px;
+}
+.cstate{
+	color: black;
+}
+.cinstate{
+	position: relative;
+	padding: 0 10px;
+	line-height: 26px;
+	font-size: 16px;
+	width: 227px;
+	top: 10px;
+}
+#scity{
+	position: relative;
+	left: 475px;
+	top: -64px;
+}
+.ccity{
+	color: black;
+}
+.cincity{
+	position: relative;
+	top: 10px;
+	line-height: 26px;
+	padding: 0 10px;
+	font-size: 16px;
+	width: 222px;
+}
+#local{
+	position: relative;
+	left: 200px;
+	top: -20px;
+}
+.clocal{
+	color: black;
+}
+.cinlocal{
+	position: relative;
+	padding: 0 10px;
+	top: 10px;
+	font-size: 16px;
+	width: 495px;
+	line-height: 30px;
+}
+.courseopt{
+	position: relative;
+	left: 200px;
+	height: 26px;
+	font-size: 15px;
+	padding: 0 20px;
+	top: -16px;
+	width: 518px;
+}
+.branchopt{
+	position: relative;
+	left: 200px;
+	height: 26px;
+	font-size: 15px;
+	padding: 0 20px;
+	top: -16px;
+	width: 518px;
+}
+button{
+	background-color: #121515;
+	display: block;
+	text-align: center;
+	outline: none;
+	padding: 14px 110px;
+	margin: 30px 0px 0px 30px;
+	color: white;
+	cursor: pointer;
+	border-radius: 12px;
+	border: 0;
+}
+button:hover{
+	background-color: #3D3D3D;
+}

@@ -42,7 +42,7 @@ try{
 		}
 		else{
 			//redirect admin dashboard
-			response.sendRedirect("admin_dashboard.html");
+			response.sendRedirect("admin_dashboard.jsp");
 		}
 	}
 	//for students
