@@ -10,17 +10,29 @@
 <title>OPJU</title>
 </head>
 <body>
-		<h1 class = "stext">Student details</h1><hr>
-		<div class = "main">
-			<div class = "table_style">
-				<table id = "table">
-					<tr>
-						<th>Roll number</th>
-						<th>Name</th>
-						<th>course</th>
-						<th>branch</th>
-						<th>Task</th>
-					</tr>
+	<div class="wrapper">
+		<div class="sidebar">
+			<h2>Admin</h2>
+			<ul>
+				<li><a href="admin_dashboard.jsp">Home</a></li>
+				<li><a href="#">Profile</a></li>
+				<li><a href="detail.html">Student Details</a></li>
+				<li><a href="add_student.jsp">Add Student</a></li>
+				<li><a href="index.html">Logout</a></li>
+			</ul>
+		</div><!-- sidebar -->
+		<div class="main_content">
+			<h1 class = "stext">Student details</h1><hr>
+			<div class = "main">
+				<div class = "table_style">
+					<table id = "table">
+						<tr>
+							<th>Roll number</th>
+							<th>Name</th>
+							<th>course</th>
+							<th>branch</th>
+							<th>Task</th>
+						</tr>
 			<%
 				String driver = "com.mysql.jdbc.Driver";
 				String url = "jdbc:mysql://localhost:3306/sis";
@@ -97,7 +109,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+			</div><!-- right -->
+		</div><!-- main -->
+		</div><!-- main_content -->
+	</div><!-- wrapper -->
 </body>
 </html>
