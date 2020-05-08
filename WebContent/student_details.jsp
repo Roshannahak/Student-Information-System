@@ -54,9 +54,11 @@
 							<td><%= rs.getString(4) %></td>
 							<td><%= rs.getString(5) %></td>
 							<td>
-								<a class = "view" href="view.jsp?v=<%= rs.getString(1) %>"><i class="fa fa-eye" aria-hidden="true"></i></a>
-								<a class = "edit" href="edit.jsp?e=<%= rs.getString(1) %>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-								<a class = "del" href="delete.jsp?d=<%= rs.getString(1) %>"><i class="fa fa-trash" aria-hidden="true"></i></a>
+								<div class = "crud_icon">
+									<a class = "view" href="view.jsp?v=<%= rs.getString(1) %>"><i class="fa fa-eye" aria-hidden="true"></i></a>
+									<a class = "edit" href="edit.jsp?e=<%= rs.getString(1) %>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+									<a class = "del" href="delete.jsp?d=<%= rs.getString(1) %>"><i class="fa fa-trash" aria-hidden="true"></i></a>
+								</div>
 							</td>
 						</tr>
 					<%
