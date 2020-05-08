@@ -4,24 +4,36 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link rel = "stylesheet" type="text/css" href = "add_student.css">
+<link rel="stylesheet" type="text/css" href="addstudent.css">
 <title>OPJU</title>
 </head>
 <body>
-	<div class = "response1">
-		<p class = "success">${result}</p>
-	</div>
-	<div class = "response2">
-		<p class = "failed">${error}</p>
-	</div>
-	<div class = "response3">
-		<p class = "alert">${alert}</p>
-	</div>
-	<div class = "addinfo"><h1>Add Student Info</h1></div>
-	<div class = "main">
-		<form action="add_student_server.jsp" method = "post">
-			<h3 class = "name">Roll Number</h3>
-			<input class = "cinroll" type = "text" name = "roll" required>
+	<div class="wrapper">
+		<div class="sidebar">
+			<h2>Admin</h2>
+			<ul>
+				<li><a href="admin_dashboard.jsp">Home</a></li>
+				<li><a href="#">Profile</a></li>
+				<li><a href="student_details.jsp">Student Details</a></li>
+				<li><a href="add_student.jsp">Add Student</a></li>
+				<li><a href="index.html">Logout</a></li>
+			</ul>
+		</div>
+		<div class="main_content">
+			<div class = "response1">
+				<p class = "success">${result}</p>
+			</div>
+			<div class = "response2">
+				<p class = "failed">${error}</p>
+			</div>
+			<div class = "response3">
+				<p class = "alert">${alert}</p>
+			</div>
+			<div class = "addinfo"><h1>Add Student Info</h1></div>
+			<div class = "main">
+			<form action="add_student_server.jsp" method = "post">
+				<h3 class = "name">Roll Number</h3>
+				<input class = "cinroll" type = "text" name = "roll" required>
 			
 			<h3 class = "name">Password</h3>
 			<input class = "cinpass" type = "password" name = "pass" required>
@@ -101,6 +113,8 @@
 				<button class = "btn" type = "submit">Submit</button>
 			</div>
 		</form>
+	</div>
+		</div>
 	</div>
 </body>
 </html>

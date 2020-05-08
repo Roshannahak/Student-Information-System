@@ -5,12 +5,24 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link rel = "stylesheet" href = "edit_style.css">
+<link rel = "stylesheet" href = "editstyle.css">
 <title>OPJU</title>
 </head>
 <body>
-	<div class = "addinfo"><h1>Update Student Details</h1></div>
-	<div class = "main">
+	<div class="wrapper">
+		<div class="sidebar">
+			<h2>Admin</h2>
+			<ul>
+				<li><a href="admin_dashboard.jsp">Home</a></li>
+				<li><a href="#">Profile</a></li>
+				<li><a href="student_details.jsp">Student Details</a></li>
+				<li><a href="add_student.jsp">Add Student</a></li>
+				<li><a href="index.html">Logout</a></li>
+			</ul>
+		</div>
+		<div class="main_content">
+			<div class = "addinfo"><h1>Update Student Details</h1></div>
+			<div class = "main">
 		<% 
 		String driver = "com.mysql.jdbc.Driver";
 		String url = "jdbc:mysql://localhost:3306/sis";
@@ -124,6 +136,8 @@
 				<button class = "btn" type = "submit">Update</button>
 			</div>
 		</form>
+		</div>
+		</div>
 	</div>
 </body>
 </html>
