@@ -1,0 +1,79 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+body{
+	background: #f3f5f9;
+}
+
+
+
+.nev{
+	display: flex;
+	position: relative;
+	padding: 15px;
+	background-color: #101010;
+}
+.nev .logo{
+	padding-left: 6px;
+}
+.nev .logo h2{
+	color: #ffffff;
+	margin: 2px 0px 2px 0px;
+}
+.nev .username{
+	margin-left: auto;
+	margin-right: 0;
+	width: 250px;
+}
+.nev .username h4{
+	color: #ffffff;
+	text-transform: uppercase;
+	margin: 3px 0px 3px 0px;
+	text-align: center;
+	padding: 3px 0 3px 0;
+}
+
+
+
+
+
+.wrapper{
+	display: flex;
+	position: relative;
+}
+.wrapper .sidebar{
+	position: fixed;
+	background: #0e0e0e;
+	width: 200px;
+	height: 100%;
+	padding: 25px 0;
+}
+.wrapper .sidebar ul li{
+	padding: 15px;
+	padding-left: 20px;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	border-top: 1px solid rgba(225,225,225,0.05);
+}
+.wrapper .sidebar ul li a{
+	color: #c7c4c4;
+	display: block;
+}
+.wrapper .sidebar ul li:hover{
+	background: #2f2f2f;
+}
+.wrapper .sidebar ul li:hover a{
+	color: #ffffff;
+}
+.wrapper .main_content{
+	width: 100%;
+	margin-left: 200px;
+	padding: 10px;
+}

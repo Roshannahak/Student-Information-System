@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel = "stylesheet" type="text/css" href = "student_details.css">
+<link rel = "stylesheet" type="text/css" href = "studentdetails.css">
 <script src="https://use.fontawesome.com/89c5ec223f.js"></script>
 <meta charset="ISO-8859-1">
 <title>OPJU</title>
@@ -23,6 +23,18 @@
 		</div><!-- sidebar -->
 		<div class="main_content">
 			<h1 class = "stext">Student details</h1><hr>
+			<div class = "searchex">
+				<div class = "export">
+					<form action="data_export.jsp" method="POST">
+						<input type="submit" class="btn" value="Export in Excel">
+					</form>
+				</div>
+				<div class = "search">
+					<form action="" method="POST">
+						<input type="text" class = "searchin" name = "search" placeholder="Search here">
+					</form>
+				</div>
+			</div>
 			<div class = "main">
 				<div class = "table_style">
 					<table id = "table">
@@ -39,7 +51,14 @@
 				String user = "root";
 				String db_password = "497557";
 				
-				String query = "select roll_no, firstname, lastname, course_name, branch_name from students as s, courses as c, branch as b where s.course_id = c.course_id and s.branch_id = b.branch_id";
+				String query;
+				
+				String searchre = request.getParameter("search");
+				if(searchre != null){
+					query = "select roll_no, firstname, lastname, course_name, branch_name from students as s, courses as c, branch as b where s.course_id = c.course_id and s.branch_id = b.branch_id and firstname like '"+searchre+"' ";
+				}else{
+					query = "select roll_no, firstname, lastname, course_name, branch_name from students as s, courses as c, branch as b where s.course_id = c.course_id and s.branch_id = b.branch_id";
+				}
 				try{
 					Class.forName(driver);
 					Connection conn = DriverManager.getConnection(url, user, db_password);
