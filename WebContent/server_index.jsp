@@ -58,7 +58,7 @@ try{
 		}
 		else{
 			//redirect student dashboard
-			response.sendRedirect("student_dashboard.html");
+			response.sendRedirect("studentpage/student_dashboard.jsp?r="+roll_id+" ");
 		}
 	}
 }

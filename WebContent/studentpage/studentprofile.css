@@ -1,0 +1,172 @@
+@charset "ISO-8859-1";
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: sans-serif;
+}
+.Htext{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.main{
+	width: 750px;
+	margin: auto;
+	margin-top: 20px;
+	padding: 20px;
+	padding-top: 30px;
+	background-color: #e6e6e6;
+}
+.main .div1{
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+}
+.main .div1 h4{
+	margin-right: 10px;
+	margin-left: 30px;
+}
+.main .div1 input{
+	line-height: 27px;
+	width: 200px;
+	font-size: 17px;
+}
+.main .div2 {
+	display: flex;
+	width: 100%;
+}
+.main .div2 h4{
+	margin-right: 10px;
+	margin-left: 30px;
+}
+.main .div2 input{
+	width: 525px;
+	margin-left: 51px;
+	line-height: 27px;
+	font-size: 17px;
+}
+.main .div3 {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+}
+.main .div3 h4{
+	margin-left: 30px;
+	margin-right: 10px;
+}
+.main .div3 input{
+	width: 200px;
+	margin-left: 39px;
+	line-height: 27px;
+	font-size: 17px;
+}
+.main .div3 .agein{
+	margin-left: 45px
+}
+.main .div4 {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+}
+.main .div4 h4{
+	margin-left: 30px;
+	margin-right: 6px;
+}
+.main .div4 input{
+	width: 200px;
+	line-height: 27px;
+	font-size: 17px;
+}
+.main .div4 .phonein{
+	margin-left: 7px
+}
+.main .div5 {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+}
+.main .div5 h4{
+	margin-left: 30px;
+	margin-right: 62px;
+}
+.main .div5 input{
+	width: 525px;
+	line-height: 27px;
+	font-size: 17px;
+}
+.main .div6 {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+}
+.main .div6 h4{
+	margin-left: 30px;
+	margin-right: 41px;
+}
+.main .div6 textarea{
+	width: 516px;
+	padding: 6px;
+	line-height: 30px;
+	font-size: 17px;
+}
+.main .div7 {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+}
+.main .div7 h4{
+	margin-left: 30px;
+	margin-right: 74px;
+}
+.main .div7 input{
+	width: 200px;
+	line-height: 27px;
+	font-size: 17px;
+}
+.main .div7 .statein{
+	margin-left: -26px
+}
+.main .div8 {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+}
+.main .div8 h4{
+	margin-left: 30px;
+	margin-right: 50px;
+}
+.main .div8 input{
+	width: 526px;
+	line-height: 27px;
+	font-size: 17px;
+}
+.main .div9 {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+}
+.main .div9 h4{
+	margin-left: 30px;
+	margin-right: 50px;
+}
+.main .div9 input{
+	width: 526px;
+	line-height: 27px;
+	font-size: 17px;
+}
+button{
+	background-color: #121515;
+	display: block;
+	text-align: center;
+	outline: none;
+	padding: 14px 110px;
+	margin: 30px 0px 0px 30px;
+	color: white;
+	cursor: pointer;
+	border-radius: 12px;
+	border: 0;
+}
+button:hover{
+	background-color: #3D3D3D;
+}
