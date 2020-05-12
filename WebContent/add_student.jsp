@@ -16,7 +16,7 @@
 				<li><a href="#">Profile</a></li>
 				<li><a href="student_details.jsp">Student Details</a></li>
 				<li><a href="add_student.jsp">Add Student</a></li>
-				<li><a href="index.html">Logout</a></li>
+				<li><a href="index.jsp">Logout</a></li>
 			</ul>
 		</div>
 		<div class="main_content">

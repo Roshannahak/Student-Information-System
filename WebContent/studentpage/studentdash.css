@@ -12,53 +12,27 @@
 body{
 	background: #f3f5f9;
 }
-
-
-
-.nev{
-	display: flex;
-	position: relative;
-	padding: 15px;
-	background-color: #101010;
-}
-.nev .logo{
-	padding-left: 6px;
-}
-.nev .logo h2{
-	color: #ffffff;
-	margin: 2px 0px 2px 0px;
-}
-.nev .username{
-	margin-left: auto;
-	margin-right: 0;
-	width: 250px;
-}
-.nev .username h4{
-	color: #ffffff;
-	text-transform: uppercase;
-	margin: 3px 0px 3px 0px;
-	text-align: center;
-	padding: 3px 0 3px 0;
-}
-
-
-
-
-
 .wrapper{
 	display: flex;
 	position: relative;
 }
 .wrapper .sidebar{
 	position: fixed;
-	background: #0e0e0e;
-	width: 200px;
+	background: #0a0a0a;
+	width: 250px;
 	height: 100%;
-	padding: 25px 0;
+	padding: 30px 0;
+}
+.wrapper .sidebar h2{
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 15px;
+	margin-bottom: 30px;
+	letter-spacing: 3px;
 }
 .wrapper .sidebar ul li{
 	padding: 15px;
-	padding-left: 20px;
 	border-bottom: 1px solid rgba(0,0,0,0.05);
 	border-top: 1px solid rgba(225,225,225,0.05);
 }
@@ -74,6 +48,6 @@ body{
 }
 .wrapper .main_content{
 	width: 100%;
-	margin-left: 200px;
+	margin-left: 250px;
 	padding: 10px;
 }
