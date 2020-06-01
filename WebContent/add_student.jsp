@@ -8,6 +8,12 @@
 <title>OPJU</title>
 </head>
 <body>
+	<%
+		response.setHeader("cache-control", "no-cache, no-store, must-revalidate");
+		if(session.getAttribute("id") == null){
+			response.sendRedirect("index.jsp");
+		}
+	%>
 	<div class="wrapper">
 		<div class="sidebar">
 			<h2>Admin</h2>
@@ -16,7 +22,7 @@
 				<li><a href="#">Profile</a></li>
 				<li><a href="student_details.jsp">Student Details</a></li>
 				<li><a href="add_student.jsp">Add Student</a></li>
-				<li><a href="index.jsp">Logout</a></li>
+				<li><form action="logout"><a href="logout">Logout</a></form></li>
 			</ul>
 		</div>
 		<div class="main_content">
@@ -31,7 +37,7 @@
 			</div>
 			<div class = "addinfo"><h1>Add Student Info</h1></div>
 			<div class = "main">
-			<form action="add_student_server.jsp" method = "post">
+			<form action="newstudent" method = "post">
 				<h3 class = "name">Roll Number</h3>
 				<input class = "cinroll" type = "text" name = "roll" required>
 			

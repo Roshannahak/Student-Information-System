@@ -20,4 +20,13 @@
   	<url-pattern>/logout</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>addstudent</servlet-name>
+  	<servlet-class>com.sis.admin.AddStudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addstudent</servlet-name>
+  	<url-pattern>/newstudent</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
