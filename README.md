@@ -22,7 +22,7 @@ Student information system can be used by education institutes to maintain the r
 ### Technologies:
   * MYSQL
   * JSP (java server page)
-  * HTML
+  * SERVLET
   * CSS
   * JQUERY
  
