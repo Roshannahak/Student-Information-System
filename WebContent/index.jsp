@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="style_index.css">
 </head>
 <body>
-	<form action="server_index.jsp" method="POST">
+	<form action="login" method="POST">
 		<div class="main">
 			<div class="left">
 				<!-- left side style -->
