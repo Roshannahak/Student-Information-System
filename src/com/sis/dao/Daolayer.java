@@ -104,4 +104,61 @@ public class Daolayer {
 		}
 		return false;
 	}
+	
+	//access total number of students
+	public int total() {
+		
+		String tquery = "select count(*) from students";
+		try {
+			Class.forName(driver);
+			conn = DriverManager.getConnection(url, user, password);
+			st = conn.createStatement();
+			rs = st.executeQuery(tquery);
+			if(rs.next()) {
+				int a = rs.getInt(1);
+				return a;
+			}
+		}catch(Exception e) {
+			System.out.println("error..."+ e);
+		}
+		return 0;
+	}
+	
+	//access total number of boys
+	public int totalboys() {
+			
+		String bquery = "select count(*) from students where gender = 'male'";
+		try {
+			Class.forName(driver);
+			conn = DriverManager.getConnection(url, user, password);
+			st = conn.createStatement();
+			rs = st.executeQuery(bquery);
+			if(rs.next()) {
+				int a = rs.getInt(1);
+				return a;
+			}
+		}catch(Exception e) {
+			System.out.println("error..."+ e);
+		}
+		return 0;
+	}
+	
+	//access total number of girls
+		public int totalgirls() {
+				
+			String gquery = "select count(*) from students where gender = 'female'";
+			try {
+				Class.forName(driver);
+				conn = DriverManager.getConnection(url, user, password);
+				st = conn.createStatement();
+				rs = st.executeQuery(gquery);
+				if(rs.next()) {
+					int a = rs.getInt(1);
+					return a;
+				}
+			}catch(Exception e) {
+				System.out.println("error..."+ e);
+			}
+			return 0;
+		}
 }

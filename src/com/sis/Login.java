@@ -33,6 +33,14 @@ public class Login extends HttpServlet {
 			if(dao.admincheck(rollid, pass)) {
 				HttpSession session = request.getSession();
 				session.setAttribute("id", rollid);
+				
+				int gettotal = dao.total();
+				int getboys = dao.totalboys();
+				int getgirl = dao.totalgirls();
+				
+				session.setAttribute("total", gettotal);
+				session.setAttribute("boys", getboys);
+				session.setAttribute("girls", getgirl);
 				response.sendRedirect("admin_dashboard.jsp");
 			}
 			else {

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link rel="stylesheet" type="text/css" href="admin_dashboard_style.css">
+<link rel="stylesheet" type="text/css" href="admindashboard.css">
 <title>OPJU</title>
 </head>
 <body>
@@ -27,10 +27,18 @@
 		</div>
 		<div class="main_content">
 			<div class="info">
-				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-				sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				<div class = "card">
+					<h4>TOTAL STUDENTS</h4><hr>
+					<h1>${total}</h1>
+				</div>
+				<div class = "card">
+					<h4>BOYS</h4><hr>
+					<h1>${boys}</h1>
+				</div>
+				<div class = "card">
+					<h4>GIRLS</h4><hr>
+					<h1>${girls}</h1>
+				</div>
 			</div>
 		</div>
 	</div>

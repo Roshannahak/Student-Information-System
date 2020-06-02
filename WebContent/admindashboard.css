@@ -45,8 +45,35 @@ body{
 .wrapper .sidebar ul li:hover a{
 	color: #ffffff;
 }
+
+
 .wrapper .main_content{
 	width: 100%;
 	margin-left: 200px;
 	padding: 10px;
+}
+.wrapper .main_content .info{
+	display: flex;
+	width: 100%;
+	margin-top: 50px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+.wrapper .main_content .info .card{
+	height: 120px;
+	width: 30%;
+	margin: 10px;
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	padding: 12px;
+	text-align: center;
+}
+.info .card h4{
+	padding-bottom: 5px;
+	font-size: 18px;
+}
+.info .card h1{
+	margin-top: 15px;
+	font-size: 50px;
 }
