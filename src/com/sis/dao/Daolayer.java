@@ -4,26 +4,35 @@ import java.sql.*;
 
 public class Daolayer {
 	
-	Connection conn = null;
 	PreparedStatement pt = null;
 	Statement st = null;
 	ResultSet rs = null;
 	
-	String driver = "com.mysql.jdbc.Driver";
-	String url = "jdbc:mysql://localhost:3306/sis";
-	String user = "root";
-	String password = "497557";
+	private String driver = "com.mysql.jdbc.Driver";
+	private String url = "jdbc:mysql://localhost:3306/sis";
+	private String user = "root";
+	private String password = "497557";
 	
 	String query = null;
+	
+	//load driver and connection 
+	protected Connection getconnection() {
+		Connection conn = null;
+		try {
+			Class.forName(driver);
+			conn = DriverManager.getConnection(url, user, password);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return conn;
+	}
 	
 	//Admin
 	public Boolean admincheck(String id, String pass) {
 		
 		query = "select * from admin where admin_id = ? and password = ?";
 		
-		try {
-			Class.forName(driver);
-			conn = DriverManager.getConnection(url, user, password);
+		try {Connection conn = getconnection();
 			pt = conn.prepareStatement(query);
 			pt.setString(1, id);
 			pt.setString(2, pass);
@@ -42,9 +51,7 @@ public class Daolayer {
 		
 		query = "select * from students where roll_no = ? and password = ?";
 		
-		try {
-			Class.forName(driver);
-			conn = DriverManager.getConnection(url, user, password);
+		try {Connection conn = getconnection();
 			pt = conn.prepareStatement(query);
 			pt.setString(1, id);
 			pt.setString(2, pass);
@@ -64,9 +71,7 @@ public class Daolayer {
 		
 		query = "select * from students where roll_no = ?";
 		
-		try {
-			Class.forName(driver);
-			conn = DriverManager.getConnection(url, user, password);
+		try {Connection conn = getconnection();
 			pt = conn.prepareStatement(query);
 			pt.setString(1, roll);
 			rs = pt.executeQuery();
@@ -109,9 +114,7 @@ public class Daolayer {
 	public int total() {
 		
 		String tquery = "select count(*) from students";
-		try {
-			Class.forName(driver);
-			conn = DriverManager.getConnection(url, user, password);
+		try {Connection conn = getconnection();
 			st = conn.createStatement();
 			rs = st.executeQuery(tquery);
 			if(rs.next()) {
@@ -128,9 +131,7 @@ public class Daolayer {
 	public int totalboys() {
 			
 		String bquery = "select count(*) from students where gender = 'male'";
-		try {
-			Class.forName(driver);
-			conn = DriverManager.getConnection(url, user, password);
+		try {Connection conn = getconnection();
 			st = conn.createStatement();
 			rs = st.executeQuery(bquery);
 			if(rs.next()) {
@@ -147,9 +148,7 @@ public class Daolayer {
 		public int totalgirls() {
 				
 			String gquery = "select count(*) from students where gender = 'female'";
-			try {
-				Class.forName(driver);
-				conn = DriverManager.getConnection(url, user, password);
+			try {Connection conn = getconnection();
 				st = conn.createStatement();
 				rs = st.executeQuery(gquery);
 				if(rs.next()) {
